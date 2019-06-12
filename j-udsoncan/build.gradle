@@ -1,0 +1,14 @@
+plugins {
+	id 'java-library'
+	id 'eclipse'
+}
+
+group = "${rootProject.group}"
+version = "${rootProject.version}"
+description = """uds"""
+
+dependencies {
+    compile project(':j-can')
+    compile project(':j-can-isotp')
+}
+

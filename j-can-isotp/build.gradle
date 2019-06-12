@@ -1,0 +1,12 @@
+plugins {
+	id 'java-library'
+	id 'eclipse'
+}
+
+group = "${rootProject.group}"
+version = "${rootProject.version}"
+description = """transport layer"""
+
+dependencies {
+	compile project(':j-can')
+}

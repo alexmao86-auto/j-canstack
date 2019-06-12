@@ -1,0 +1,28 @@
+group = "com.fzh"
+version = "0.1"
+description = """java can stack"""
+
+subprojects{
+	apply plugin: 'java-library'
+	apply plugin: 'eclipse'
+
+	tasks.withType(JavaCompile) {
+		options.encoding = "UTF-8"
+	}
+	dependencies {
+		compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+		compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+
+		// Use JUnit test framework
+		testImplementation 'junit:junit:4.12'
+	}
+
+	// In this section you declare where to find the dependencies of your project
+	repositories {
+		// Use jcenter for resolving your dependencies.
+		// You can declare any Maven/Ivy/file repository here.
+		jcenter()
+	}
+
+}
+

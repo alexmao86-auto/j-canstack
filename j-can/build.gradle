@@ -1,0 +1,8 @@
+plugins {
+	id 'java-library'
+	id 'eclipse'
+}
+
+group = "${rootProject.group}"
+version = "${rootProject.version}"
+description = """can layer"""

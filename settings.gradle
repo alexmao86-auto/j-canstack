@@ -1,0 +1,2 @@
+rootProject.name = 'j-canstack'
+include 'j-can','j-can-isotp', 'j-udsoncan'
